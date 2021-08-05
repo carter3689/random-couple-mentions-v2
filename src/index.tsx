@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Chat } from './Chat';
 import reportWebVitals from './reportWebVitals';
+import './Chat.css';
+
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import { firebase_config } from './firebaseconfig';
+
+// firebase.initializeApp(firebase_config);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Chat />
   </React.StrictMode>,
   document.getElementById('root')
 );
